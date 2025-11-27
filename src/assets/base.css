@@ -1,52 +1,83 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  /* LIGHT THEME – OW Esports inspired */
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  /* Backgrounds */
+  --owes-main-background: #f9fafb;
+  --owes-secondary-background: #e5e7eb;
+  --owes-card-background: #ffffff;
+  --owes-border-color: #d1d5db;
 
-  --vt-c-indigo: #2c3e50;
+  /* Brand / accent */
+  --owes-accent-color: #f99e1a;
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  /* Status / semantic colours – tuned to fit the palette */
+  --owes-red-color: #ff4e45;
+  --owes-yellow-color: #fbbf24;
+  --owes-green-color: #22c55e;
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  /* Typography */
+  --owes-text-color: #111827;
+  --owes-text-secondary-color: #4b5563;
+  --owes-text-muted-color: #6b7280;
+
+  /* Links & subtle accents */
+  --owes-link-color: #218ffe;
+  --owes-link-hover-color: #1d7ee0;
+
+  /* DARK THEME – derived from same palette */
+
+  /* Backgrounds */
+  --owes-main-background-dark: #1a1d21;
+  --owes-secondary-background-dark: #1d2227;
+  --owes-card-background-dark: #1f2226;
+  --owes-border-color-dark: #23282c;
+
+  /* Brand / accent (same orange, pops on dark) */
+  --owes-accent-color-dark: #f99e1a;
+
+  /* Status / semantic (brightened a bit for dark bg) */
+  --owes-red-color-dark: #ff6b6b;
+  --owes-yellow-color-dark: #facc15;
+  --owes-green-color-dark: #4ade80;
+
+  /* Typography */
+  --owes-text-color-dark: #f9fafb;
+  --owes-text-secondary-color-dark: #e5e7eb;
+  --owes-text-muted-color-dark: #9ca3af;
+
+  /* Links & subtle accents */
+  --owes-link-color-dark: #59aafc;
+  --owes-link-hover-color-dark: #7bbdff;
 }
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+  --color-background-1: var(--owes-main-background);
+  --color-background-2: var(--owes-secondary-background);
+  --color-background-3: var(--owes-card-background);
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-border: var(--owes-border-color);
+  --color-border-hover: var(--owes-border-color);
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --color-heading: var(--owes-text-color);
+  --color-text: var(--owes-text-secondary-color);
 
   --section-gap: 160px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+    --color-background-1: var(--owes-main-background-dark);
+    --color-background-2: var(--owes-secondary-background-dark);
+    --color-background-3: var(--owes-card-background-dark);
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+    --color-border: var(--owes-border-color-dark);
+    --color-border-hover: var(--owes-border-color-dark);
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
+    --color-heading: var(--owes-text-color-dark);
+    --color-text: var(--owes-text-secondary-color-dark);
+
+    --section-gap: 160px;
   }
 }
 
@@ -61,7 +92,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  background: var(--color-background-1);
   transition:
     color 0.5s,
     background-color 0.5s;
