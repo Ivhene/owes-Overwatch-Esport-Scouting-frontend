@@ -56,11 +56,18 @@
   --color-background-2: var(--owes-secondary-background);
   --color-background-3: var(--owes-card-background);
 
+  --color-highlight-1: var(--owes-accent-color);
+  --color-highlight-2: var(--owes-red-color);
+  --color-highlight-3: var(--owes-green-color);
+  --color-highlight-4: var(--owes-yellow-color);
+
   --color-border: var(--owes-border-color);
   --color-border-hover: var(--owes-border-color);
 
   --color-heading: var(--owes-text-color);
   --color-text: var(--owes-text-secondary-color);
+
+  --color-shadow: var(--owes-border-color);
 
   --section-gap: 160px;
 }
@@ -71,11 +78,18 @@
     --color-background-2: var(--owes-secondary-background-dark);
     --color-background-3: var(--owes-card-background-dark);
 
+    --color-highlight-1: var(--owes-accent-color-dark);
+    --color-highlight-2: var(--owes-red-color-dark);
+    --color-highlight-3: var(--owes-green-color-dark);
+    --color-highlight-4: var(--owes-yellow-color-dark);
+
     --color-border: var(--owes-border-color-dark);
     --color-border-hover: var(--owes-border-color-dark);
 
     --color-heading: var(--owes-text-color-dark);
     --color-text: var(--owes-text-secondary-color-dark);
+
+    --color-shadow: var(--owes-border-color-dark);
 
     --section-gap: 160px;
   }
