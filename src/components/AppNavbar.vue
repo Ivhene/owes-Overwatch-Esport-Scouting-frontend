@@ -45,7 +45,7 @@ const logoSrc = computed(() => (prefersDark.value ? logoDark : logoLight))
     <RouterLink to="/"><img class="logo-img" :src="logoSrc" alt="Logo" /></RouterLink>
   </div>
   <nav>
-    <RouterLink to="/"><div class="link-container">Home</div></RouterLink>
+    <RouterLink to="/players"><div class="link-container">Players</div></RouterLink>
     <RouterLink to="/about"><div class="link-container">About</div></RouterLink>
   </nav>
   <div class="user-container">USER</div>
